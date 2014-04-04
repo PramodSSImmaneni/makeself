@@ -225,11 +225,11 @@ initargs="\$@"
 while true
 do
     case "\$1" in
-    -h | --help)
+    --help)
 	MS_Help
 	exit 0
 	;;
-    -q | --quiet)
+    --quiet)
 	quiet=y
 	noprogress=y
 	shift
