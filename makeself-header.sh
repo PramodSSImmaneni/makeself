@@ -344,11 +344,6 @@ EOLSM
     --)
 	shift
 	break ;;
-    -*)
-	echo Unrecognized flag : "\$1" >&2
-	MS_Help
-	exit 1
-	;;
     *)
 	break ;;
     esac
