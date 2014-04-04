@@ -1,3 +1,9 @@
+makeself - sashadt
+==================
+
+This fork of the original [makeself](https://github.com/megastep/makeself) is designed to allow users to pass arguments to internal script without having to prefix them by "--".  Single dash options such as -h and -q are also sent to be executed by the internal script.  This allows internal script to behave more closely to original form whether it is being executed from inside self-extracting archive or directly.
+
+
 # makeself - Make self-extractable archives on Unix
 
 [makeself.sh][1] is a small shell script that generates a self-extractable
