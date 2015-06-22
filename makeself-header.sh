@@ -9,6 +9,7 @@ CRCsum="$CRCsum"
 MD5="$MD5sum"
 TMPROOT=\${TMPDIR:=/tmp}
 USER_PWD="\$PWD"; export USER_PWD
+MS_SCRIPT_NAME="\$0"; export MS_SCRIPT_NAME
 
 label="$LABEL"
 script="$SCRIPT"
