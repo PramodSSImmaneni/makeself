@@ -124,7 +124,7 @@ MS_Help()
     cat << EOH >&2
 \${helpheader}Makeself version $MS_VERSION
  1) Getting help or info about \$0 :
-  \$0 --help   Print this message
+  \$0 --help-makeself   Print this message
   \$0 --info   Print embedded info : title, default target directory, embedded script ...
   \$0 --lsm    Print embedded lsm entry (or no LSM)
   \$0 --list   Print the list of files in the archive
@@ -227,10 +227,14 @@ initargs="\$@"
 while true
 do
     case "\$1" in
-    --help)
+    --help-makeself)
 	MS_Help
 	exit 0
 	;;
+    --help)
+    set -- "-h"
+    break;
+    ;;
     --quiet)
 	quiet=y
 	noprogress=y
